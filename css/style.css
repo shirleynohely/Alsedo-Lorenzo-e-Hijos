@@ -171,6 +171,7 @@ h5 {
     margin-bottom: 2rem;
     background: url("../assets/banner-Alsedo-Lorenzo-e-Hijos.jpg") center/cover no-repeat;
     border-radius: 0.25rem;
+
 }
 
 .main-header--container {
@@ -236,14 +237,11 @@ h5 {
     color: #d8691b;
 }
 
-.product {
-    display: block;
-}
-
 .product-img {
     height: 15rem;
-    border-radius: 0.25rem;
     margin-bottom: 1rem;
+    display: block;
+    
 }
 
 .product h5 {
@@ -252,6 +250,7 @@ h5 {
     line-height: 1;
     text-align: center;
 }
+
 
 @media screen and (min-width: 576px) {
     .products-list {
@@ -282,6 +281,13 @@ h5 {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .product:hover .product-img,
+    .product:focus .product-img{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -294,23 +300,48 @@ h5 {
     }
 }
 
-/* .mark-container{
-    padding-top: 1.5rem;
+.mark-container{
+    padding-top: 1rem;
     padding-bottom: 1.5rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center ;
     
 }
-.mark-container img{
-    height: 60vh;
+.mark-container h2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.mark img{
+   height: 150px;
     border-radius: 0.25rem;
-    align-items: center;
+    text-align: center;
 }
 .mark{
-    width: 100%;
+    text-align: center;
+   
+}
+
+@media screen and (min-width: 768px) {
+.mark-container{
+    display: flex;       
+}
+.mark{
     display: flex;
-} */
+    align-items: center;
+    text-align: justify;
+}
+.mark-container img{
+    height: 300px;
+    padding-left: 2rem;
+ }
+ .mark-container h2{
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+}
 
 /* CONTACTO */
 .contact-form {
