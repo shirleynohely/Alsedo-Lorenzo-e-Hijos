@@ -71,6 +71,7 @@ h5 {
 
 .show-links {
     height: 250px;
+    line-height: 3;
 }
 
 .image-list {
@@ -164,15 +165,18 @@ h5 {
 .footer p a:hover {
     color: #d8691b;
 }
+#carouselExampleDark{
+    padding-bottom: 1.5rem;
+}
 
-.main-header {
+/* .main-header {
     height: 60vh;
     position: relative;
     margin-bottom: 2rem;
     background: url("../assets/banner-Alsedo-Lorenzo-e-Hijos.jpg") center/cover no-repeat;
     border-radius: 0.25rem;
 
-}
+} */
 
 .main-header--container {
     position: absolute;
@@ -393,15 +397,38 @@ h5 {
 .form-textarea {
     height: 7rem;
 }
-
-.btn {
+.phone{
+    display: flex;
+    align-items: center;
+}
+.phone div p {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+.email{
+    display: flex;
+    align-items: center;
+}
+.email div p {
+    padding-top: 0.8rem;
+    padding-left: 0.5rem;
+}
+.address{
+    display: flex;
+    align-items: center;
+}
+.address div p {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+/* .btn {
     background-color: #d8691b;
     border-radius: 0.25rem;
     color: white;
     width: 35%;
     height: 30px;
     border-color: #d8691b;
-}
+} */
 
 /* PRODUCTOS */
 .products-list {
