@@ -1,0 +1,20 @@
+{
+  "name": "casa-lorenzo-ramos",
+  "version": "1.0.0",
+  "description": "Proyecto de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirleynohely/Alsedo-Lorenzo-e-Hijos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shirleynohely/Alsedo-Lorenzo-e-Hijos/issues"
+  },
+  "homepage": "https://github.com/shirleynohely/Alsedo-Lorenzo-e-Hijos#readme"
+}
