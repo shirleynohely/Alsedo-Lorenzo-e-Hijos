@@ -168,14 +168,13 @@ h5 {
     padding-bottom: 1.5rem;
 }
 
-.main-header {
+/* .main-header {
     height: 60vh;
     position: relative;
     margin-bottom: 2rem;
     background: url("../assets/banner-Alsedo-Lorenzo-e-Hijos.jpg") center/cover no-repeat;
     border-radius: 0.25rem;
-
-}
+} */
 
 .main-header--container {
     position: absolute;
