@@ -218,10 +218,10 @@ small, .small {
   font-size: 0.875em;
 }
 
-mark, .mark {
-  /* padding: 0.1875em;
-  background-color: var(--bs-highlight-bg); */
-}
+/* mark, .mark {
+   padding: 0.1875em;
+  background-color: var(--bs-highlight-bg); 
+} */
 
 sub,
 sup {
@@ -239,10 +239,10 @@ sup {
   top: -0.5em;
 }
 
-a {
-  /* color: var(--bs-link-color);
-  text-decoration: underline; */
-}
+/* a {
+  color: var(--bs-link-color);
+  text-decoration: underline; 
+} */
 a:hover {
   color: var(--bs-link-hover-color);
 }
@@ -3533,7 +3533,7 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  /* padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x); */
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);

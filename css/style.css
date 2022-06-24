@@ -71,7 +71,7 @@ h5 {
 }
 
 .show-links {
-    height: 250px;
+    height: 220px;
     line-height: 3;
 }
 
@@ -84,7 +84,7 @@ h5 {
     display: block;
     text-align: center;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 0 0;
     border-top: 1px solid grey;
     transition: 0.3s ease-in-out all;
 }
@@ -138,14 +138,6 @@ h5 {
     min-height: calc(100vh - (6rem + 4rem));
 }
 
-/* .main-header {
-    height: 60vh;
-    position: relative;
-    margin-bottom: 2rem;
-    background: url("../assets/banner-Alsedo-Lorenzo-e-Hijos.jpg") center/cover no-repeat;
-    border-radius: 0.25rem;
-} */
-
 .main-header--container {
     position: absolute;
     top: 0;
@@ -161,20 +153,26 @@ h5 {
 .main-text {
     text-align: center;
 }
-
-@media only screen and (min-width: 768px) {
-    .main-text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0;
-    }
-}
 .banner{
     border-radius: 0.5rem;
-    height: 666px;
+    height: 256px;
 }
 #carouselExampleDark{
     padding-bottom: 1.5rem;
 }
+
+@media only screen and (min-width: 750px) {
+    .main-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        
+    }
+    .banner{
+        border-radius: 0.5rem;
+        height: 666px;
+    }
+}
+
 
 /* FOOTER */
 
