@@ -1,0 +1,166 @@
+
+/* MAIN */
+
+.main{
+    width: 90vw;
+    padding-top: map-get($spacings, spacing-base);
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+    max-width: 1120px;
+    min-height: calc(100vh - (6rem + 4rem));  
+
+    #carouselExampleDark{
+        padding-bottom: 1.5rem;
+    }
+    .banner{
+        border-radius: 0.5rem;
+        height: 256px;
+    }
+    .products-container {
+        display: grid;
+        gap: 2rem 1rem;
+        .category-container {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 3rem;
+    
+           h4 {
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+            
+            .category-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                a {
+                    text-transform: capitalize;
+                    display: block;
+                    transition: 0.3s ease-in-out all;
+                }
+                
+                a:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        .products-list {
+            display: grid;
+            gap: 2rem 1rem;
+            padding-bottom: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            h5 {
+                margin-bottom: 0;
+                margin-top: 0.25rem;
+                line-height: 1;
+                text-align: center;
+                }
+            .product-img {
+                height: 15rem;
+                margin-bottom: map-get($spacings, spacing-base);
+                display: block;
+                }
+              
+        }
+        .products-list {
+            display: flex;
+    }
+    }
+    @media only screen and (min-width: 750px) {
+        .banner{
+            border-radius: 0.5rem;
+            height: 666px;
+        }
+    }
+    
+    @media screen and (min-width: 576px) {
+        .products-list {
+            grid-template-columns: 1fr 1fr;
+            .product-img {
+                height: 10rem;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .products-container {
+            grid-template-columns: 200px 1fr;
+            gap: map-get($spacings, spacing-base);
+            .category-container {
+                order: 0;
+    
+                .category-list {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+                .products-list {
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: left;
+                }
+               
+            }
+            .product:hover .product-img,
+            .product:focus .product-img {
+            transform: scale(1.1);
+            transition: 0.3s;
+            }
+      
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .products-list {
+            grid-template-columns: 1fr 1fr 1fr;
+                h5{
+                    font-size: map-get($spacings, spacing-base);
+                } 
+        }
+    }
+    
+    .mark-container{
+        @include flex;
+        padding-top: map-get($spacings, spacing-base);
+        padding-bottom: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+
+       h2{
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    
+    }
+    .mark{
+        text-align: center;
+
+        img{
+            height: 150px;
+             border-radius: 0.25rem;
+             text-align: center;
+         }
+    }
+    
+    @media screen and (min-width: 768px) {
+    .mark-container{
+        display: flex;  
+        
+        img{
+            height: 300px;
+            padding-left: map-get($spacings, spacing-large);
+         }
+        h2{
+            text-align: center;
+            padding-bottom:map-get($spacings, spacing-large);
+            padding-top: map-get($spacings, spacing-large);
+        }
+    }
+    .mark{
+        @include flex;
+        text-align: justify;
+    }
+   
+    }
+}
+

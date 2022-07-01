@@ -1,0 +1,11 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin padding ($top,$left,$bottom,$right) {
+    padding-top: $top;
+    padding-left: $left;
+    padding-bottom: $bottom;
+    padding-right: $right;
+}

@@ -1,8 +1,7 @@
 header
 {
     .navbar {
-        display: flex;
-        align-items: center;
+        @include flex;
         justify-content: center;
     
         .nav-center {
@@ -10,10 +9,9 @@ header
             max-width: 1120px;
     
             .nav-header {
+                @include flex;
                 height: 6rem;
-                display: flex;
                 justify-content: space-between;
-                align-items: center;
     
                 .nav-logo {
                     display: flex;
@@ -58,13 +56,12 @@ header
     
         .navbar {
             height: 6rem;
-            padding-bottom: $spacing-base;
+            padding-bottom: map-get($spacings, spacing-base);
             background-color: #f8fafc;
             width: 100%;
     
             .nav-center {
-                display: flex;
-                align-items: center;
+                @include flex;
                 .nav-header {
                     height: auto;
                     padding: 0;
@@ -83,8 +80,8 @@ header
                 width: 100%;
                 .nav-link {
                     padding: 0;
-                    margin-right: $spacing-base;
-                    font-size: $spacing-base;
+                    margin-right: map-get($spacings, spacing-base);
+                    font-size: map-get($spacings, spacing-base);
                     border-top: none;
                 }
             }

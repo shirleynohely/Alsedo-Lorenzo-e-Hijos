@@ -1,12 +1,4 @@
 /* CONTACTO */
-
-.main{
-    width: 90vw;
-    padding-top: $spacing-base;
-    padding-bottom: 1.5rem;
-    margin: 0 auto;
-    max-width: 1120px;
-    min-height: calc(100vh - (6rem + 4rem));
     .contact-container {
         display: grid;
         gap: 2rem 3rem;
@@ -17,42 +9,36 @@
             padding-bottom: 2rem;
             text-align: center;
             }
-
-            .phone{
-                display: flex;
-                align-items: center;
-                div p {
-                    padding-top: 1.4rem;
-                    padding-left: 0.5rem;
-                }
+            .contact-date{
+                @include flex
             }
-            .email{
-                display: flex;
-                align-items: center;
-                div p {
-                padding-top: 1.3rem;
-                padding-left: 0.5rem;
-                }
+
+           .phone{
+                @extend .contact-date;
+                @include padding(1.4rem,0.5rem,0,0);
+              }
+
+              .email{
+                @extend .contact-date;
+                @include padding(1.5rem,0.5rem,0,0);
             }
             
-            .address{
-                display: flex;
-                align-items: center;
-             div p {
-                padding-top: 1.4rem;
-                padding-left: 0.5rem;
+            .address {
+                @extend .contact-date;
+                @include padding(1.4rem,0.5rem,0,0);
                 }
-            }
-        }
-    }
-}
+ }
+        
+    
+
 .form{
     .contact-form {
         width: 100%;
         margin: 0;
     }
     .contact-form--row {
-        margin-bottom: $spacing-base;
+        margin-bottom: map-get($spacings, spacing-base);
+
         .form-label {
             display: block;
             margin-bottom: 0.1rem;
@@ -74,6 +60,7 @@
     .form-textarea {
     height: 7rem;
     }
+}
 }
 
 @media screen and (min-width: 992px) {

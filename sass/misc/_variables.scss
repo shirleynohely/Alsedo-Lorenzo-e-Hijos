@@ -1,12 +1,16 @@
 /* COLORS */
 $color-primary: #d8691b;
+$color-secondary: black;
+$color-text: white;
 
 /* SPACINGS */
-$spacing-base: 1rem;
-$spacing-large: 2rem;
-$spacing-xlarge: 3rem;
-$spacing-xxlarge: 4rem;
-$spacing-xxlarge: 5rem;
+$spacings:(
+    spacing-base: 1rem,
+    spacing-large: 2rem,
+    spacing-xlarge: 3rem,
+    spacing-xxlarge: 4rem,
+    spacing-xxxlarge: 5rem
+);
 
 /* FONT-FAMILY */
 $font-family-primary: 'Roboto', sans-serif;
