@@ -6,14 +6,14 @@
     padding-top: map-get($spacings, spacing-base);
     padding-bottom: 1.5rem;
     margin: 0 auto;
-    max-width: 1120px;
-    min-height: calc(100vh - (6rem + 4rem));  
+    max-width: $max-width;
+    min-height: $min-height; 
 
     #carouselExampleDark{
         padding-bottom: 1.5rem;
     }
     .banner{
-        border-radius: 0.5rem;
+        border-radius: $border-radius;
         height: 256px;
     }
     .products-container {
@@ -23,7 +23,7 @@
             order: 1;
             display: flex;
             flex-direction: column;
-            padding-bottom: 3rem;
+            padding-bottom: map-get($spacings, spacing-xlarge);
     
            h4 {
                 margin-bottom: 0.5rem;
@@ -70,7 +70,7 @@
     @media only screen and (min-width: 750px) {
         .banner{
             border-radius: 0.5rem;
-            height: 666px;
+            height: $banner-height;
         }
     }
     
@@ -102,8 +102,8 @@
             }
             .product:hover .product-img,
             .product:focus .product-img {
-            transform: scale(1.1);
-            transition: 0.3s;
+            transform: $transform;
+            transition: $transition;
             }
       
         }

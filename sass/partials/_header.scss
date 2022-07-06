@@ -10,7 +10,7 @@ header
     
             .nav-header {
                 @include flex;
-                height: 6rem;
+                height: map-get($spacings, spacing-xxxxlarge);
                 justify-content: space-between;
     
                 .nav-logo {
@@ -19,15 +19,16 @@ header
                 }
                 .image-logo {
                     height: 60px;
+                    width: auto;
                 }
                 .image-list {
                     height: 60px;
+                    width: auto;
                     font-size: 1.25rem;
                 }
             }
         }
        
-        
         .nav-links {
             height: 0;
             overflow: hidden;
@@ -38,9 +39,9 @@ header
             .nav-link {
                 display: block;
                 text-align: center;
-                font-size: 1rem;
+                font-size:  map-get($spacings, spacing-base);
                 padding: 0 0;
-                border-top: 1px solid grey; 
+                border-top: 1px solid $color-border; 
             }   
             
         }
@@ -51,13 +52,13 @@ header
     
     
     }
-    
+
     @media screen and (min-width: 992px) {
     
         .navbar {
-            height: 6rem;
+            height: map-get($spacings, spacing-xxxxlarge);
             padding-bottom: map-get($spacings, spacing-base);
-            background-color: #f8fafc;
+            background-color:$color-background;
             width: 100%;
     
             .nav-center {
@@ -65,7 +66,7 @@ header
                 .nav-header {
                     height: auto;
                     padding: 0;
-                    margin-right: 2rem;
+                    margin-right: map-get($spacings, spacing-large);
     
                     .image-list {
                         display: none;
@@ -87,5 +88,5 @@ header
             }
         }
     }
-
 }
+

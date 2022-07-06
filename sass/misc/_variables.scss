@@ -1,7 +1,11 @@
 /* COLORS */
 $color-primary: #d8691b;
+$color-text-primary:#2b2b2b;
 $color-secondary: black;
 $color-text: white;
+$color-border: rgb(223, 219, 219);
+$color-background: #f8fafc;
+
 
 /* SPACINGS */
 $spacings:(
@@ -9,9 +13,21 @@ $spacings:(
     spacing-large: 2rem,
     spacing-xlarge: 3rem,
     spacing-xxlarge: 4rem,
-    spacing-xxxlarge: 5rem
+    spacing-xxxlarge: 5rem,
+    spacing-xxxxlarge: 6rem
 );
 
 /* FONT-FAMILY */
 $font-family-primary: 'Roboto', sans-serif;
 
+/* SIZES */
+$min-height: calc(100vh - (6rem + 4rem));
+$max-width: 1120px;
+$banner-height: 666px;
+
+/* ANIMATION */
+$transition: 0.3s ease-in-out all;
+$transform: scale(1.1);
+
+/* IMAGES */
+$border-radius: 0.5rem;
