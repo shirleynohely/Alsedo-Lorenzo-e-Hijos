@@ -1,5 +1,5 @@
 # Alsedo-Lorenzo-e-Hijos
-Proyecto de desarrollo web con HTML5, CSS3, Bootstrap5 y SASS
+Proyecto de desarrollo web con HTML5, CSS3, Bootstrap5, SASS y JavaScript
 
 # Demo
 https://alsedo-lorenzo-e-hijos.netlify.app/
