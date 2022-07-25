@@ -1,0 +1,15 @@
+/*MEDIA-QUERIES - PRODUCTOS*/
+
+@media screen and (min-width: 992px) {
+  .products-container {
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    .category-container {
+      order: 0;
+      .category-list {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

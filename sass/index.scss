@@ -1,5 +1,4 @@
 /* FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 /* MISC */
@@ -20,8 +19,15 @@
 @import './views/quienes-somos';
 @import './views/recetas';
 @import './views/contacto';
+@import './views/404';
 
 
+/* MEDIA QUERIES */
+@import './media-queries/index';
+@import './media-queries/productos';
+@import './media-queries/quienes-somos';
+@import './media-queries/recetas';
+@import './media-queries/contacto';
 
 
 

@@ -18,7 +18,7 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/translated.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <title>
       Alsedo Lorenzo e Hijos | materias primas y útiles para panificación.
@@ -103,91 +103,100 @@
         <div class="category-container">
           <h4>Productos</h4>
           <div class="category-list">
-            <a href="#ingredientes">Ingredientes</a>
-            <a href="#decoracion">Decoración</a>
-            <a href="#utiles">Útiles</a>
+            <a href="#" class="categories active" id="todos">Todos</a>
+            <a href="#" class="categories" id="ingredientes">Ingredientes</a>
+            <a href="#" class="categories" id="decoracion">Decoración</a>
           </div>
         </div>
-        <div class="products-list">
-          <a href="" class="product"
+        <div class="products-list" id="products-list">
+          <a href="./pages/productos.html" class="product ingredientes"
             ><img
               class="product-img"
               src="./assets/cacao-polvo-amargo.png"
               alt="cacao en polvo"
             />
             <h5>Cacao en polvo</h5>
+            <p>$1500</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product ingredientes"
             ><img
               class="product-img"
               src="./assets/chocolate-blanco.png"
               alt="chocolate blanco"
             />
             <h5>Chocolate blanco</h5>
+            <p>$1200</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product decoracion"
             ><img
               class="product-img"
               src="./assets/chocolate-con-leche-moldeo.png"
               alt="chocolate con leche moldeo"
             />
             <h5>Chocolate con leche</h5>
+            <p>$1300</p>
           </a>
 
-          <a href="" class="product">
+          <a href="./pages/productos.html" class="product ingredientes">
             <img
               class="product-img"
               src="./assets/chocolate-con-leche.png"
               alt="chocolate con leche"
             />
             <h5>Chocolate con leche</h5>
+            <p>$1400</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product ingredientes"
             ><img
               class="product-img"
               src="./assets/chocolate-leche.png"
               alt="chocolate"
             />
             <h5>Chocolate con leche</h5>
+            <p>$1500</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product decoracion"
             ><img
               class="product-img"
               src="./assets/chocolate-negro-semiamargo.png"
               alt="chocolate semiamargo"
             />
             <h5>Chocolate semiamargo</h5>
+            <p>$1500</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product decoracion"
             ><img
               class="product-img"
               src="./assets/dulce-de-leche.png"
               alt="dulce de leche"
             />
             <h5>Dulce de leche</h5>
+            <p>$1000</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product ingredientes"
             ><img
               class="product-img"
               src="./assets/harina-000.png"
               alt="harina 000"
             />
             <h5>Harina 000</h5>
+            <p>$1000</p>
           </a>
 
-          <a href="" class="product"
+          <a href="./pages/productos.html" class="product ingredientes"
             ><img
               class="product-img"
               src="./assets/harina-0000.png"
               alt="harina 0000"
             />
             <h5>Harina 0000</h5>
+            <p>$1000</p>
           </a>
         </div>
       </section>
@@ -207,11 +216,12 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <p>
-        &copy; 2022 <a href="index.html">Alsedo Lorenzo e Hijos </a> - By
-        <a href="https://github.com/shirleynohely" target="_blank"> Shirley Nohely</a>
-      </p>
+    <footer class="footer">     
+        <p>
+          &copy; 2022 <a href="index.html">Alsedo Lorenzo e Hijos </a> - By
+          <a href="https://github.com/shirleynohely" target="_blank"> Shirley Nohely</a>
+        </p>
+      
       <div class="icon-footer">
         <a href="https://www.instagram.com/alsedolorenzoehijos/?hl=es-la" target="_blank">
           <svg
@@ -227,7 +237,7 @@
             />
           </svg>
         </a>
-        <a href="">
+        <a href="https://api.whatsapp.com/send/?phone=5492215437453&text&type=phone_number&app_absent=0" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -242,6 +252,7 @@
           </svg>
         </a>
       </div>
+      
     </footer>
   </body>
   <script src="./js/app.js"></script>

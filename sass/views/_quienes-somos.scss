@@ -1,37 +1,23 @@
 /* QUIENES SOMOS */
-.main{
-    .about {
-        display: grid;
-        gap: 2rem 4rem;
-        padding-bottom: map-get($spacings, spacing-xlarge);
-        justify-items: center;
-        h2 {
-            font-weight: bold;
-            @include padding(1rem,0,1rem,0);
-            text-align: center;
-        }
-        p {
-            text-align: justify;
-        }
-        .about-img {
-            border-radius: $border-radius;
-            height: 190px;
-            width: auto;
-        }
-      
+.main {
+  .about {
+    display: grid;
+    gap: 2rem 4rem;
+    padding-bottom: map-get($spacings, spacing-xlarge);
+    justify-items: center;
+    h2 {
+      font-weight: bold;
+      @include padding(1rem, 0, 1rem, 0);
+      text-align: center;
     }
-
-    @media screen and (min-width: 992px) {
-        .about {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 300px;
-            align-items: center;
-            padding-top: map-get($spacings, spacing-xxlarge);
-            .about-img {
-                height: 100%;
-            }
-        }
-      
+    p {
+      text-align: justify;
     }
+    .about-img {
+      border-radius: $border-radius;
+      height: 190px;
+      width: auto;
+    }
+  }
+ 
 }
-

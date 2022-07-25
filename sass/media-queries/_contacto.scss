@@ -1,0 +1,14 @@
+/*MEDIA-QUERIES - CONTACTO*/
+
+@media screen and (min-width: 992px) {
+    .contact-container {
+      grid-template-columns: 1fr 450px;
+      align-items: center;
+    }
+    .contact-info {
+      h2 {
+        padding-bottom: 4.5rem;
+        text-align: center;
+      }
+    }
+  }

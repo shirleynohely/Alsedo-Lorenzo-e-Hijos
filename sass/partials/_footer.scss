@@ -1,27 +1,25 @@
 .footer {
-    @include flex;
-    text-align: center;
-    height: map-get($spacings, spacing-xxxxlarge);
-    flex-direction: column;
-    justify-content: center;
-    background: $color-secondary;
-    color: $color-text;
-    p {
-        margin-bottom: 0;  
-        a {
-            color: $color-text;  
-        }
-        a:hover {
-            color: $color-primary;
-        }
-    }
-    
-    .icon-footer a{
-        color: $color-text;
-        
-       
+  @include flex;
+  text-align: center;
+  height: map-get($spacings, spacing-xxxxlarge);
+  flex-direction: column;
+  justify-content: center;
+  background: $color-secondary;
+  color: $color-text;
+  p {
+    margin-bottom: 0;
+    a {
+      color: $color-text;
     }
     a:hover {
-        color: $color-primary;
+      color: $color-primary;
     }
+  }
+
+  .icon-footer a {
+    color: $color-text;
+  }
+  a:hover {
+    color: $color-primary;
+  }
 }

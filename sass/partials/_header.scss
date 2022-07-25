@@ -5,8 +5,8 @@ header
         justify-content: center;
     
         .nav-center {
-            width: 90vw;
-            max-width: 1120px;
+            width: $nav-width;
+            max-width: $max-width;
     
             .nav-header {
                 @include flex;
@@ -22,8 +22,7 @@ header
                     width: auto;
                 }
                 .image-list {
-                    height: 60px;
-                    width: auto;
+                    @extend .image-logo;
                     font-size: 1.25rem;
                 }
             }
@@ -34,23 +33,21 @@ header
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            transition: 0.3s ease-in-out all;
+            transition: $transition;
     
             .nav-link {
                 display: block;
                 text-align: center;
-                font-size:  map-get($spacings, spacing-base);
+                font-size: map-get($spacings, spacing-base);
                 padding: 0 0;
                 border-top: 1px solid $color-border; 
             }   
             
         }
         .show-links {
-            height: 220px;
+            height: $link-height;
             line-height: 3;
         }  
-    
-    
     }
 
     @media screen and (min-width: 992px) {

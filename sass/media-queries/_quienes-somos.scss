@@ -1,0 +1,16 @@
+/*MEDIA-QUERIES - QUIENES SOMOS*/
+
+.main {
+  @media screen and (min-width: 992px) {
+    .about {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px;
+      align-items: center;
+      padding-top: map-get($spacings, spacing-xxlarge);
+      .about-img {
+        height: 100%;
+      }
+      
+    }
+  }
+}

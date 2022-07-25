@@ -5,7 +5,7 @@ $color-secondary: black;
 $color-text: white;
 $color-border: rgb(223, 219, 219);
 $color-background: #f8fafc;
-
+$color-border-form: #e2e8f0;
 
 /* SPACINGS */
 $spacings:(
@@ -14,7 +14,8 @@ $spacings:(
     spacing-xlarge: 3rem,
     spacing-xxlarge: 4rem,
     spacing-xxxlarge: 5rem,
-    spacing-xxxxlarge: 6rem
+    spacing-xxxxlarge: 6rem,
+    spacing-xxxxxlarge: 8rem
 );
 
 /* FONT-FAMILY */
@@ -24,6 +25,8 @@ $font-family-primary: 'Roboto', sans-serif;
 $min-height: calc(100vh - (6rem + 4rem));
 $max-width: 1120px;
 $banner-height: 666px;
+$nav-width: 90vw;
+$link-height: 220px;
 
 /* ANIMATION */
 $transition: 0.3s ease-in-out all;
